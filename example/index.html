@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Example</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link href="../Help.css" rel="stylesheet">
+  <link href="example.css" rel="stylesheet">
+</head>
+<body>
+<button class="helpButton" onclick="help.activate().helpEvent(null);" id="help">HELP</button>
+<header>
+  <div class="container">
+    <h1 id="pageTitle">Page Title</h1>
+  </div>
+</header>
+<section id="sectionHelp" class="sectionFirst">
+  <div class="container">
+    <h2>Section 1</h2>
+    <div class="blockWrapper">
+      <div class="block">
+        <h3>Block Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum enim id consectetur vulputate. Duis
+          tempor, diam et viverra euismod, diam arcu ultricies metus, sed vehicula risus diam sed mi. Nam at enim
+          ullamcorper, commodo augue vitae, commodo justo. Nulla malesuada urna sit amet quam efficitur, nec facilisis
+          orci fringilla. Suspendisse vel lacus nunc. Morbi sed velit at sapien vehicula commodo. Donec sagittis
+          fermentum neque, in malesuada leo iaculis at. Vivamus malesuada, nisi non rhoncus sollicitudin, lectus mi
+          posuere eros, a rutrum lorem dui vel tortor. </p>
+      </div>
+    
+    </div>
+  </div>
+</section>
+<section class="sectionSecond">
+  <div class="container">
+    <h2 id="titleHelp">Section 2</h2>
+    <div class="blockWrapper">
+      <div id="sectionBlock" class="block">
+        <h3>Block Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum enim id consectetur vulputate. Duis
+          tempor, diam et viverra euismod, diam arcu ultricies metus, sed vehicula risus diam sed mi.</p>
+      </div>
+      <div class="block">
+        <h3 id="blockTitle">Block Title</h3>
+        <p id="blockContent">Suspendisse vel lacus nunc. Morbi sed velit at sapien vehicula commodo. Donec sagittis fermentum neque, in
+          malesuada leo iaculis at.</p>
+      </div>
+    </div>
+    <div id="blockRow" class="blockWrapper">
+      <div class="block">
+        <h3>Block Title</h3>
+        <p>Morbi convallis suscipit erat, mattis congue nibh ullamcorper ut. Aliquam id ipsum eget tellus interdum
+          pulvinar. Vestibulum dapibus orci eget aliquet aliquam.</p>
+      </div>
+      <div class="block">
+        <h3>Block Title</h3>
+        <p>Quisque lacinia nulla id lacus mattis, vel tempor magna lobortis. Quisque imperdiet finibus augue vel
+          laoreet. Aenean non elit gravida, commodo dui sit amet, rutrum nulla.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</div>
+
+
+<script src="../Help.js"></script>
+<script>
+  var pageTitle = document.getElementById('pageTitle');
+  var sectionHelp = document.getElementById('sectionHelp');
+  var titleHelp = document.getElementById('titleHelp');
+  var sectionBlock = document.getElementById('sectionBlock');
+  var blockTitle = document.getElementById('blockTitle');
+  var blockContent = document.getElementById('blockContent');
+  var blockRow = document.getElementById('blockRow');
+
+  Help.Attach(pageTitle, 'pageTitle');
+  Help.Attach(sectionHelp, 'sectionHelp');
+  Help.Attach(titleHelp, 'secondSection:title');
+  Help.Attach(sectionBlock, 'secondSection:block');
+  Help.Attach(blockTitle, 'secondSection:block:title');
+  Help.Attach(blockContent, 'secondSection:block:content');
+  Help.Attach(blockRow, 'secondSection:block:row');
+
+  var help = new Help();
+  help.init();
+</script>
+</body>
+</html>

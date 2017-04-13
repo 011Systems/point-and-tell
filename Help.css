@@ -1,0 +1,146 @@
+/** @fileoverview Help.css */
+
+.Help_glow {
+  box-shadow: 0 0 30px 8px violet;
+  position: absolute;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.Help_blanket {
+  border:solid;
+  border-color: rgba(200,200,210,0.7);
+  z-index:100000;
+  position: fixed;
+  top:0; left:0; right:0; bottom: 0;
+  cursor: default;
+}
+.Help_help {
+  z-index:1;
+  position: fixed;
+  width: 450px;
+  overflow: auto;
+  padding: 12px;
+  border-radius: 4px;
+  background: rgba(255,255,255,0.8);
+  font-size: 12px;
+  line-height: 18px;
+  text-rendering: optimizelegibility;
+  border: solid #333 1px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+
+}
+.Help_help:hover {
+  border-color: violet;
+}
+.Help_help h1 {
+  font-weight: 300;
+  font-size: 24px;
+  margin-top: 0;
+  border-bottom: 2px solid violet;
+  padding-bottom: 2px;
+}
+.Help_help h2 {
+  font-weight: 300;
+  font-size: 16px;
+}
+.Help_help table, .Help_help td, .Help_help th {
+  border: solid black 1px;
+  border-collapse: collapse;
+  padding: 3px;
+}
+.Help_help ul {
+  -webkit-padding-start: 24px;
+  padding-start: 24px;
+}
+.Help_help li {
+  margin-bottom:3px;
+}
+.Help_help tt {
+  display: inline-block;
+  position: relative;
+  color: #555;
+  font: bold 10px arial;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 1px 0 1px;
+  padding: 3px;
+  background: #eff0f2;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border-top: 1px solid #f5f5f5;
+  -webkit-box-shadow:
+    inset 0 0 25px #e8e8e8,
+    0 1px 0 #c3c3c3,
+    0 2px 0 #c9c9c9,
+    0 2px 3px #333;
+  -moz-box-shadow:
+    inset 0 0 25px #e8e8e8,
+    0 1px 0 #c3c3c3,
+    0 2px 0 #c9c9c9,
+    0 2px 3px #333;
+  box-shadow:
+    inset 0 0 25px #e8e8e8,
+    0 1px 0 #c3c3c3,
+    0 2px 0 #c9c9c9,
+    0 2px 3px #333;
+  text-shadow: 0 1px 0 #f5f5f5;
+  min-width: 16px;
+}
+.Help_help .box {
+  border: 1px solid lightgray;
+  padding: 1px;
+}
+.Help_help .help_ref {
+  font-weight: bold;
+  cursor: default;
+  border-bottom: 1px solid cyan;
+}
+.Help_help .help_ref:hover {
+  background: rgba(0,255,255,0.2); /* cyan at 50% */
+}
+.Help_help button {
+  cursor:pointer;
+}
+.Help_reload {
+  position:fixed;
+  top:0; left:0;
+  z-index:2;
+  font-size: 20px;
+  font-weight: bold;
+  background: yellow;
+}
+.Help_close {
+  position:absolute;
+  width:24px;
+  height:24px;
+  top: 8px;
+  right: 8px;
+  cursor:pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  background-image: url('example/img/w-x.png');
+  user-select: none;
+  background-origin: border-box;
+  z-index: 10;
+  -webkit-transition-duration: .15s;
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transform: scale(1);
+}
+.Help_close:hover {
+  -webkit-transition-duration: .15s;
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transform: scale(1.2);
+}
+.Help_f_min {
+  bottom: 10px;
+  right: 10px;
+  max-height: calc(100% - 100px);
+  top:auto;
+  left: auto;
+}
+/* EOF */
