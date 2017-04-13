@@ -1,0 +1,26 @@
+{
+  "name": "point-and-tell",
+  "version": "1.0.0",
+  "description": "Help system / page guide",
+  "main": "Help.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/011Systems/point-and-tell.git"
+  },
+  "keywords": [
+    "help",
+    "guide"
+  ],
+  "author": "011systems",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/011Systems/point-and-tell/issues"
+  },
+  "homepage": "https://github.com/011Systems/point-and-tell#readme"
+}
