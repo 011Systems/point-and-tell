@@ -79,6 +79,10 @@ Include `Help.js` and `Help.css` into your website/app using your preferred meth
 
   Page Title
   ```
+  
+## Demo
+Visit https://glideport.aero and press `F1` on any page.
+
 ## License
 ### ISC
 https://en.wikipedia.org/wiki/ISC_license
