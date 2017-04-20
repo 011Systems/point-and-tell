@@ -1,20 +1,19 @@
 # point-and-tell
 
-  Help system / page guide
+Point and Tell is a drop-in script for displaying contextual help bubbles to users. The bubble can be anchored to any HTML tag, and contents of the help are stored in [MarkDown](https://en.wikipedia.org/wiki/Markdown) format.
 
 ## Installation
 
-  ```
-  <script src="PATH_TO_FILE/Help.js"></script>
-  ```
 ## Usage
 
+Include `Help.js` and `Help.css` into your website/app using your preferred method. While `Help.css` provides some default styles, you can modify it to fit the design of your website/app.
+  
   In your .js file init library
   ```
   var help = new Help();
   help.init();
   ```
-  Connect HTML element with content from help.md
+  Connect HTML element with content from help.md (see example for more info)
   ```
   Help.Attach(ELEMENT, CONTENT_ID_FROM_MD_FILE);
   ```
