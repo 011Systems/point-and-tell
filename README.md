@@ -2,8 +2,6 @@
 
 Point and Tell is a drop-in script for displaying contextual help bubbles to users. The bubble can be anchored to any HTML tag, and contents of the help are stored in [MarkDown](https://en.wikipedia.org/wiki/Markdown) format.
 
-## Installation
-
 ## Usage
 
 Include `Help.js` and `Help.css` into your website/app using your preferred method. While `Help.css` provides some default styles, you can modify it to fit the design of your website/app.
